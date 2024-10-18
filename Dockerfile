@@ -11,7 +11,7 @@ FROM eclipse-temurin:21-jdk
 
 EXPOSE 25565
 WORKDIR /opt/paper
-ADD https://api.papermc.io/v2/projects/paper/versions/1.21.1/builds/122/downloads/paper-1.21.1-122.jar paper.jar
+ADD https://api.papermc.io/v2/projects/paper/versions/1.21.1/builds/123/downloads/paper-1.21.1-123.jar paper.jar
 RUN echo "eula=true" > eula.txt
 COPY --from=Builder /flash/build/libs/lbwl-flash-all-*.jar plugins/flash.jar
 
